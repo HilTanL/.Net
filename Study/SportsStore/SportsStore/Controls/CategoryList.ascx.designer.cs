@@ -7,9 +7,9 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace SportsStore.Pages {
+namespace SportsStore.Controls {
     
     
-    public partial class Listing {
+    public partial class CategoryList {
     }
 }

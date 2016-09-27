@@ -10,6 +10,6 @@
 namespace SportsStore.Pages {
     
     
-    public partial class Listing {
+    public partial class CartView {
     }
 }
