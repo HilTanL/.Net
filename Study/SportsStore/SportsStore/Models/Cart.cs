@@ -12,7 +12,7 @@ namespace SportsStore.Models
         public void AddItem(Product product,int quantity)
         {
             CartLine line = lineCollection
-                .Where(p => p.Product.ProductID == product.ProductID)
+                .Where(p => p.Product.ProductId == product.ProductId)
                 .FirstOrDefault();
             if(line==null)
             {
@@ -29,7 +29,7 @@ namespace SportsStore.Models
         }
         public void RemoveLine(Product product)
         {
-            lineCollection.RemoveAll(p => p.Product.ProductID == product.ProductID);
+            lineCollection.RemoveAll(p => p.Product.ProductId == product.ProductId);
         }
 
         public decimal ComputeTotalValue()

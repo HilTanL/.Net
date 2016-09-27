@@ -23,7 +23,7 @@ namespace SportsStore.Pages
                 int selectedProductId;
                 if(int.TryParse(Request.Form["add"],out selectedProductId))
                 {
-                    Product selectedProduct = repo.Products.Where(p => p.ProductID == selectedProductId).FirstOrDefault();
+                    Product selectedProduct = repo.Products.Where(p => p.ProductId == selectedProductId).FirstOrDefault();
                     if (selectedProduct!= null)
                     {
                         SessionHelper.GetCart(Session).AddItem(selectedProduct, 1);
@@ -37,7 +37,7 @@ namespace SportsStore.Pages
         public IEnumerable<Product> GetProducts()
         {
             return FilterProducts()
-                .OrderBy(p => p.ProductID)
+                .OrderBy(p => p.ProductId)
                 .Skip((CurrentPage - 1) * pageSize)
                 .Take(pageSize);
         }

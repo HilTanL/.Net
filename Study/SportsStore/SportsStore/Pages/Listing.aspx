@@ -11,7 +11,7 @@
                    <h3><%#Item.Name %>></h3>
                    <%#Item.Description %>
                    <h4><%#Item.Price.ToString("c") %></h4>
-                   <button name="add" type="submit" value="<%#Item.ProductID %>">Add to Cart</button>
+                   <button name="add" type="submit" value="<%#Item.ProductId %>">Add to Cart</button>
                </div>
            </ItemTemplate>
        </asp:Repeater>

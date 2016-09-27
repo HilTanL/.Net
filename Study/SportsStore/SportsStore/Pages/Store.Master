@@ -1,5 +1,4 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Store.master.cs" Inherits="SportsStore.Pages.Store" %>
-<%@ Register TagPrefix="SS" TagName="CatLinks" Src="~/Controls/CategoryList.ascx" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,10 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div id="header">
+            <SS:CartSummary runat="server" />
             <div class="title">SPORTS STORE</div>
         </div>
         <div id="categories">
-            <SS:CatLinks runat="server" />
+            <SS:CartLinks runat="server" />
         </div>
         <div>
             <asp:ContentPlaceHolder ID="bodyContent" runat="server">
