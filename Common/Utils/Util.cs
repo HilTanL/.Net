@@ -12,6 +12,8 @@ namespace Utils
         /// <returns></returns>
         public static string ClearSpace(string str)
         {
+            if (str == null) return "";
+
             string result = "";
             foreach (char c in str)
             {

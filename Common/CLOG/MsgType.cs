@@ -18,7 +18,7 @@ namespace CLog
         /// <summary>
         /// 指示普通信息类型的日志记录
         /// </summary>
-        Information,
+        Info,
 
         /// <summary>
         /// 指示警告信息类型的日志记录

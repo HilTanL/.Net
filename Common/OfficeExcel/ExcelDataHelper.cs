@@ -31,7 +31,6 @@ namespace OfficeExcel
                 {
                     if (conn.State != ConnectionState.Open) { conn.Open(); }//打开连接
 
-
                     string sqlText = "select * from [" + sheet_name + "$];";
                     OleDbCommand oleCmd = new OleDbCommand(sqlText, conn);
                     OleDbDataAdapter oleDbAdp = new OleDbDataAdapter(oleCmd);

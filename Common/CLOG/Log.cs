@@ -196,6 +196,11 @@ namespace CLog
             Write(MsgType.Warn, strMsgs);
         }
 
+        public void WriteInfo(params string[] strMsgs)
+        {
+            Write(MsgType.Info, strMsgs);
+        }
+
         /// <summary>
         /// 写入新日志，根据指定的日志内容和信息类型，采用当前时间为日志时间写入新日志
         /// </summary>
